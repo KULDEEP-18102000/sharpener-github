@@ -12,3 +12,5 @@ odd_items=document.querySelectorAll('.list-group-item:nth-child(odd)');
 for(var i=0;i<odd_items.length;i++){
     odd_items[i].style.background='green';
 }
+
+console.log("Hello worls");
