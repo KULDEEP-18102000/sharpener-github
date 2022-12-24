@@ -56,10 +56,21 @@ console.log(new_div);
 
 var container=document.querySelector('header .container');
 var h1=document.querySelector('header h1');
-var ul=document.querySelector('#items');
-console.log(ul);
-var li_item=document.querySelector('.list-group-item');
-console.log(li_item);
-ul.insertBefore(new_div,li_item);
+// var ul=document.querySelector('#items');
+// console.log(ul);
+// var li_item=document.querySelector('.list-group-item');
+// console.log(li_item);
+// ul.insertBefore(new_div,li_item);
 container.insertBefore(new_div,h1);
 new_div.style.fontSize='30px';
+
+parent_node=document.getElementById('items');
+// console.log(parent_node);
+// console.log(parent_node.innerHTML);
+// parent_node.innerHTML='<li>Hello world</li>'+parent_node.innerHTML;
+// console.log(parent_node.innerHTML);
+
+var new_li=document.createElement('li');
+var new_li_text=document.createTextNode('Hello world');
+new_li.appendChild(new_li_text);
+parent_node.prepend(new_li);
