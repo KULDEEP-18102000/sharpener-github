@@ -79,6 +79,7 @@ function deleteFunction(event){
     // console.log(list_item);
 }  
 
+//edit functionality
 function editFunction(event){
     // console.log("edit")
     var ulItems=event.target.parentNode.parentNode;
