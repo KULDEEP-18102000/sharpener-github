@@ -63,6 +63,7 @@ function onSubmit(e) {
 
   }
 
+//delete request  
 function deleteFunction(event){
     // console.log(event.target.parentNode.id);
     var ulItems=event.target.parentNode.parentNode;
